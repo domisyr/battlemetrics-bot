@@ -33,6 +33,15 @@ python-dotenv
 
 ⸻
 
+### 🚀 Quick Install (Recommended)
+
+Run this single command in the project folder to install dependencies, setup the bot, and enable auto-start:
+
+```bash
+bash install.sh
+
+⸻
+
 ⚙️ Installation
 
 1. Clone the repository
