@@ -1,4 +1,4 @@
-BM Status Bot - A Telegram Selenium Monitoring Bot
+## BM Status Bot - A Telegram Selenium Monitoring Bot
 
 This bot uses Selenium to monitor a specific status on a website and notifies you via Telegram as soon as the status changes. It is designed to run reliably on servers or devices like a Raspberry Pi and can be fully controlled through Telegram commands.
 
@@ -6,7 +6,7 @@ The focus is on simplicity, reliability, and clear control via Telegram.
 
 ⸻
 
-🚀 Features
+### 🚀 Features
 - Telegram bot based on python-telegram-bot
 - Website monitoring using Selenium (Chrome / Chromium)
 - Automatic periodic checks
@@ -18,7 +18,7 @@ The focus is on simplicity, reliability, and clear control via Telegram.
 
 ⸻
 
-📦 Requirements
+### 📦 Requirements
 - Python 3.9+
 - Google Chrome or Chromium
 - Matching ChromeDriver
@@ -39,43 +39,43 @@ Run this single command in the project folder to install dependencies, setup the
 
 ```bash
 bash install.sh
-
+```
 ⸻
 
-⚙️ Installation
+### ⚙️ Installation
 
 1. Clone the repository
-
+```bash
 git clone <REPO-URL>
 cd <REPO-FOLDER>
-
+```
 2. Create a virtual environment (recommended)
-
+```bash
 python3 -m venv venv
 source venv/bin/activate
-
+```
 3. Install dependencies
-
+```bash
 pip install -r requirements.txt
-
+```
 
 ⸻
 
-🔐 Configuration
+### 🔐 Configuration
 
 Create a .env file
 
 Create a .env file in the project root directory:
-
+```bash
 TELEGRAM_TOKEN=your_bot_token
 
 TELEGRAM_CHAT_ID=your_chat_id
-
+```
 💡 The chat ID is required so the bot knows where it is allowed to send messages.
 
 ⸻
 
-🧠 How it works
+### 🧠 How it works
 - The bot periodically opens a website using Selenium
 - A specific element or status is extracted
 - Changes are detected and compared with the last known state
@@ -85,7 +85,7 @@ The last known status is stored internally to prevent notification spam.
 
 ⸻
 
-🤖 Telegram Commands
+### 🤖 Telegram Commands
 
 Command	Description
 
@@ -108,13 +108,13 @@ Command	Description
 
 ⸻
 
-🌍 Language Support
+### 🌍 Language Support
 
 The bot supports English and German. The selected language is stored locally and persists across restarts.
 
 ⸻
 
-🛠️ Running the Bot
+### 🛠️ Running the Bot
 
 python bot.py
 
@@ -125,7 +125,7 @@ Bot started...
 
 ⸻
 
-🧩 Common Issues
+### 🧩 Common Issues
 - ❌ Missing or incompatible ChromeDriver
 - ❌ Telegram token or chat ID not set correctly
 - ❌ Chromium not installed (common on Raspberry Pi)
@@ -135,7 +135,7 @@ Logs are your best friend when troubleshooting.
 
 ⸻
 
-📈 Possible Extensions
+### 📈 Possible Extensions
 - Docker support
 - Web UI for configuration
 - Multiple monitored IDs
@@ -144,7 +144,7 @@ Logs are your best friend when troubleshooting.
 
 ⸻
 
-📝 License
+### 📝 License
 
 Private or educational use. Feel free to modify and extend the project.
 
