@@ -3,3 +3,4 @@ __pycache__/
 venv/
 player_id.txt
 *.log
+language.txt
