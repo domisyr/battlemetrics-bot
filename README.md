@@ -7,22 +7,22 @@ The focus is on simplicity, reliability, and clear control via Telegram.
 ⸻
 
 🚀 Features
-	•	Telegram bot based on python-telegram-bot
-	•	Website monitoring using Selenium (Chrome / Chromium)
-	•	Automatic periodic checks
-	•	Telegram notifications on status changes
-	•	Multilingual support (English / German)
-	•	Full control via Telegram commands
-	•	Configuration via .env file
-	•	Suitable for Raspberry Pi and server environments
+- Telegram bot based on python-telegram-bot
+- Website monitoring using Selenium (Chrome / Chromium)
+- Automatic periodic checks
+- Telegram notifications on status changes
+- Multilingual support (English / German)
+- Full control via Telegram commands
+- Configuration via .env file
+- Suitable for Raspberry Pi and server environments
 
 ⸻
 
 📦 Requirements
-	•	Python 3.9+
-	•	Google Chrome or Chromium
-	•	Matching ChromeDriver
-	•	Telegram Bot Token
+- Python 3.9+
+- Google Chrome or Chromium
+- Matching ChromeDriver
+- Telegram Bot Token
 
 Python dependencies (see requirements.txt):
 
@@ -59,6 +59,7 @@ Create a .env file
 Create a .env file in the project root directory:
 
 TELEGRAM_TOKEN=your_bot_token
+
 TELEGRAM_CHAT_ID=your_chat_id
 
 💡 The chat ID is required so the bot knows where it is allowed to send messages.
@@ -66,10 +67,10 @@ TELEGRAM_CHAT_ID=your_chat_id
 ⸻
 
 🧠 How it works
-	•	The bot periodically opens a website using Selenium
-	•	A specific element or status is extracted
-	•	Changes are detected and compared with the last known state
-	•	When a change occurs, you receive a Telegram notification
+- The bot periodically opens a website using Selenium
+- A specific element or status is extracted
+- Changes are detected and compared with the last known state
+- When a change occurs, you receive a Telegram notification
 
 The last known status is stored internally to prevent notification spam.
 
@@ -78,13 +79,21 @@ The last known status is stored internally to prevent notification spam.
 🤖 Telegram Commands
 
 Command	Description
+
 /start	Starts the bot and shows a short introduction
+
 /info	Displays bot information
+
 /setID <ID>	Sets the player/object ID to monitor
+
 /status	Shows current status and monitoring state
+
 /run	Starts monitoring
+
 /stop	Stops monitoring
+
 /lang en	Switch language to English
+
 /lang de	Switch language to German
 
 
@@ -108,21 +117,21 @@ Bot started...
 ⸻
 
 🧩 Common Issues
-	•	❌ Missing or incompatible ChromeDriver
-	•	❌ Telegram token or chat ID not set correctly
-	•	❌ Chromium not installed (common on Raspberry Pi)
-	•	❌ Website structure or element has changed
+- ❌ Missing or incompatible ChromeDriver
+- ❌ Telegram token or chat ID not set correctly
+- ❌ Chromium not installed (common on Raspberry Pi)
+- ❌ Website structure or element has changed
 
 Logs are your best friend when troubleshooting.
 
 ⸻
 
 📈 Possible Extensions
-	•	Docker support
-	•	Web UI for configuration
-	•	Multiple monitored IDs
-	•	Persistent database storage
-	•	Health checks / watchdog
+- Docker support
+- Web UI for configuration
+- Multiple monitored IDs
+- Persistent database storage
+- Health checks / watchdog
 
 ⸻
 
