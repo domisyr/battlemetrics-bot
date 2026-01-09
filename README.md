@@ -46,8 +46,8 @@ bash install.sh
 
 1. Clone the repository
 ```bash
-git clone <REPO-URL>
-cd <REPO-FOLDER>
+git clone https://github.com/domisyr/battlemetrics-bot.git
+cd /BM-Bot
 ```
 2. Create a virtual environment (recommended)
 ```bash
