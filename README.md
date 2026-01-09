@@ -131,8 +131,6 @@ Bot started...
 - ❌ Chromium not installed (common on Raspberry Pi)
 - ❌ Website structure or element has changed
 
-Logs are your best friend when troubleshooting.
-
 ⸻
 
 ### 📈 Possible Extensions
@@ -147,7 +145,3 @@ Logs are your best friend when troubleshooting.
 ### 📝 License
 
 Private or educational use. Feel free to modify and extend the project.
-
-⸻
-
-If this bot runs reliably, you set it up correctly. If it doesn’t, the issue is almost always Selenium or the runtime environment — not the bot itself. Stay patient, it’s worth it.
